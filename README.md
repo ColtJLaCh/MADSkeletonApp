@@ -24,7 +24,6 @@ flowchart TB
   Scheduler -->|queries time| Clock
   Scheduler -->|returns local times| TZ
 
-  Postgres[(Postgres DB\n(optional future repo))]
   Repo -->|DB-backed repo| Postgres
 
   subgraph CI["CI & Tests"]
