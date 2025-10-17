@@ -28,7 +28,6 @@ flowchart TB
 
   subgraph CI["CI & Tests"]
     RSpec["RSpec specs"]
-    GH["GitHub Actions (CI)"]
   end
   GH --> RSpec
   RSpec --> Scheduler
